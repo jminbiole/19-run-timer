@@ -16,20 +16,36 @@
 body {
   margin: 0;
 }
+
+.container {
+  max-width: 60rem;
+  margin: auto;
+}
+
 nav {
-  background: #00bbd3;
+  background: blue;
+  // background: #00bbd3;
   color: #fff;
   display: flex;
-  justify-content: center;
 }
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+
 .app {
   display: flex;
-  justify-content: center;
-  background: #000;
-  height: 100vh;
+  flex-direction: column;
+  background: red;
+  flex-grow: 1;
+  // background: #000;
 }
-.container {
-  width: 60%;
+.app__contents {
+  flex-grow: 1;
+}
+.app__footer {
 }
 .title {
   font-size: 16px;
@@ -38,6 +54,9 @@ nav {
 }
 .run-list {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .run-list__item {
@@ -71,4 +90,28 @@ nav {
   text-align: center;
   color: #fff;
   border: none;
+}
+
+.newRun {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background: #1c1c1c;
+}
+.new-run {
+  background: #1c1c1c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  background: #1c1c1c;
+  border: none;
+  padding-top: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.edit-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }

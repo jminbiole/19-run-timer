@@ -1,36 +1,32 @@
-<nav>
-  <div class="container">
-    <p class="title">Run Timer</p>
-  </div>
-</nav>
 
-<div class="outer-container">
-  <div class="app">
-    <div class="container">
-      <div class="run-list">
-        <div class="run-list__item">
-          <p class="date">Dec 1, 2015</p>
-          <p class="time">00:23:15</p>
-        </div>
-        <div class="run-list__item">
-          <p class="date">Dec 1, 2015</p>
-          <p class="time">00:23:15</p>
-        </div>
-        <div class="run-list__item">
-          <p class="date">Dec 1, 2015</p>
-          <p class="time">00:23:15</p>
-        </div>
-        <div class="run-list__item">
-          <p class="date">Dec 1, 2015</p>
-          <p class="time">00:23:15</p>
-        </div>
+<div class="app__contents">
+  <div class="container">
+    <div class="run-list">
+      <div class="run-list__item">
+        <p class="date">Dec 1, 2015</p>
+        <p class="time">00:23:15</p>
       </div>
-      <div class="btn-container">
-        <button class="btn" type="button" name="button">+</button>
+      <div class="run-list__item">
+        <p class="date">Dec 1, 2015</p>
+        <p class="time">00:23:15</p>
+      </div>
+      <div class="run-list__item">
+        <p class="date">Dec 1, 2015</p>
+        <p class="time">00:23:15</p>
+      </div>
+      <div class="run-list__item">
+        <p class="date">Dec 1, 2015</p>
+        <p class="time">00:23:15</p>
       </div>
     </div>
   </div>
 </div>
-
-
-{{outlet}}
+<div class="app__footer">
+  <div class="container">
+    <div class="btn-container">
+      {{#link-to 'new-run'}}
+      <button class="btn" type="button" name="button">+</button>
+      {{/link-to}}
+    </div>
+  </div>
+</div>
