@@ -2,22 +2,12 @@
 <div class="app__contents">
   <div class="container">
     <div class="run-list">
+      {{#each model as |runs|}}
       <div class="run-list__item">
-        <p class="date">Dec 1, 2015</p>
-        <p class="time">00:23:15</p>
+        <p class="date">{{ runs.date }}</p>
+        <p class="time">{{ runs.time }}</p>
       </div>
-      <div class="run-list__item">
-        <p class="date">Dec 1, 2015</p>
-        <p class="time">00:23:15</p>
-      </div>
-      <div class="run-list__item">
-        <p class="date">Dec 1, 2015</p>
-        <p class="time">00:23:15</p>
-      </div>
-      <div class="run-list__item">
-        <p class="date">Dec 1, 2015</p>
-        <p class="time">00:23:15</p>
-      </div>
+      {{/each}}
     </div>
   </div>
 </div>
