@@ -19,12 +19,11 @@ body {
 
 .container {
   max-width: 60rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 nav {
-  background: blue;
-  // background: #00bbd3;
+  background: #00bbd3;
   color: #fff;
   display: flex;
 }
@@ -38,9 +37,8 @@ nav {
 .app {
   display: flex;
   flex-direction: column;
-  background: red;
   flex-grow: 1;
-  // background: #000;
+  background: #000;
 }
 .app__contents {
   flex-grow: 1;
@@ -99,16 +97,19 @@ nav {
   background: #1c1c1c;
 }
 .new-run {
+  width: 100%;
   background: #1c1c1c;
   color: #fff;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 input {
   background: #1c1c1c;
   border: none;
   padding-top: 1rem;
   border-bottom: 1px solid #ddd;
+  width: 100%;
 }
 .edit-btns {
   display: flex;
