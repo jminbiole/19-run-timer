@@ -1,15 +1,17 @@
 
 <div class="app__contents newRun">
   <div class="container">
-  <form class="new-run" {{action "addRun" on="submit"}}>
-    <h1>New Run</h1>
+    <form class="new-run" {{action "addRun" on="submit"}}>
+    <h1 class="newTitle">New Run</h1>
     {{input type="text" placeholder="Run Time" value=time}}
     {{input type="text" placeholder="Race Date" value=date}}
     {{input type="text" placeholder="Race Notes" value=notes}}
 
     <div class="edit-btns">
-      <button type="button" name="button">CANCEL</button>
-      <button type="submit" name="button">SAVE</button>
+      {{#link-to 'index'}}
+      <button class="newBtn-cancel" type="button" name="button">CANCEL</button>
+      {{/link-to}}
+      <button class="newBtn-submit" type="submit" name="button">SAVE</button>
     </div>
   </form>
   </div>

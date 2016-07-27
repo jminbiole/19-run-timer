@@ -1,5 +1,27 @@
 <div class="app__contents">
-
+  <div class="container">
+    <div class="runInfo">
+      <h2 class="myRun">My Run</h2>
+      <div class="runInfo-time">
+        <p class="runInfo-date">ad{{ runs.date }}</p>
+        <p class="runInfo-time">adsf{{ runs.time }}</p>
+    </div>
+        <div class="run-notes">
+          <p class="notes"> sdflk{{ runs.notes }}</p>
+        </div>
+    </div>
+  </div>
 </div>
+<div class="container">
+    <div class="btn-container info-btns">
+      {{#link-to 'index'}}
+      <button class="infoBtn-back" type="button" name="button">back</button>
+      {{/link-to}}
+      {{#link-to 'new-run'}}
+      <button class="infoBtn-new" type="submit" name="button">Edit</button>
+      {{/link-to}}
+    </div>
+    </div>
+
 
 {{outlet}}
