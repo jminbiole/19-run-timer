@@ -9,8 +9,9 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 60rem;
-  margin: 0 2rem;
+  margin: 0 auto;
 }
 
 nav {
@@ -43,9 +44,10 @@ nav {
 }
 
 .title {
-  font-size: 16px;
-  padding: 0.5rem .4rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
   margin: 0;
+  width: 60rem;
 }
 
 .run-list {
@@ -63,6 +65,7 @@ nav {
   margin: 0;
   border-bottom: 2px solid #ddd;
   background: #1c1c1c;
+  font-size: 1.3rem;
 }
 
 .date {
@@ -81,6 +84,13 @@ nav {
   padding: .5rem;
   background: #1c1c1c;
 }
+.info-btn-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .btn {
   background: #80cbc4;
@@ -91,6 +101,7 @@ nav {
   text-align: center;
   color: #fff;
   border: none;
+  outline: none;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
@@ -123,6 +134,7 @@ input {
   padding-top: 1rem;
   border-bottom: 1px solid #ddd;
   width: 100%;
+  font-size: 1.3rem;
 }
 
 .edit-btns {
@@ -135,19 +147,20 @@ input {
   background: #ddd;
   border: 1px solid #ddd;
   padding: .5rem 1rem;
+  outline: none;
 }
 .newBtn-submit {
   border-radius: .3%;
   background: #80cbc4;
   border: 1px solid #80cbc4;
   padding: .5rem 1.3rem;
+  outline: none;
 }
 
 .runInfo {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: .3rem;
   color: #fff;
 
   &-time {
@@ -182,6 +195,7 @@ input {
   border-radius: 50%;
   background: #ddd;
   padding: 1rem .7rem;
+  outline: none;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px22px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
@@ -191,6 +205,7 @@ input {
   border-radius: 50%;
   background: #80cbc4;
   padding: 1rem .7rem;
+  outline: none;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
