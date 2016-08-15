@@ -2,11 +2,11 @@
 <div class="app__contents">
   <div class="container">
     <div class="run-list">
-      {{#each model as |runs|}}
-      {{#link-to 'run-info'}}
+      {{#each model as |run|}}
+      {{#link-to 'run-info' run._id}}
       <div class="run-list__item">
-        <p class="date">{{ runs.date }}</p>
-        <p class="time">{{ runs.time }}</p>
+        <p class="date">{{ run.date }}</p>
+        <p class="time">{{ run.time }}</p>
       </div>
       {{/link-to}}
       {{/each}}

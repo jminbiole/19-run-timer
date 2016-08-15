@@ -1,11 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  actions:{
-    addRun() {
-      console.log(this.time);
-      console.log(this.date);
-      console.log(this.notes);
+  actions: {
+    editRun() {
       return fetch('http://tiny-tn.herokuapp.com/collections/runs-jm', {
         method: 'post',
         body: JSON.stringify({
@@ -18,9 +15,9 @@ export default Ember.Controller.extend({
           Accept: 'application/json',
         }
       })
-      .then((res) => res.json()).then(() => {
-        this.transitionToRoute('index');
-    });
+        .then((res) => res.json()).then(() => {
+          this.transitionToRoute('run-info');
+        });
+    }
   }
-}
 });

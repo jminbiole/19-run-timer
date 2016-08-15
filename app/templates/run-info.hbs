@@ -1,17 +1,15 @@
 <div class="app__contents">
   <div class="container">
-    <div class="runInfo" {{action "runInfo" runs}}>
+    <div class="runInfo" {{action "runInfo" model}}>
       <h2 class="myRun">My Run</h2>
 
-      {{#each model as |runs|}}
-        <div class="runInfo-time">
-          <p class="runInfo-date">{{ runs.date }}</p>
-          <p class="runInfo-time">{{ runs.time }}</p>
-        </div>
-        <div class="run-notes">
-          <p class="notes">{{ runs.notes }}</p>
-        </div>
-      {{/each}}
+      <div class="runInfo-time">
+        <p class="runInfo-date">{{ model.date }}</p>
+        <p class="runInfo-time">{{ model.time }}</p>
+      </div>
+      <div class="run-notes">
+        <p class="notes">{{ model.notes }}</p>
+      </div>
     </div>
   </div>
 </div>
@@ -20,8 +18,8 @@
     {{#link-to 'index'}}
       <button class="infoBtn-back" type="button" name="button">Back</button>
     {{/link-to}}
-    {{#link-to 'new-run'}}
-      <button class="infoBtn-new" type="submit" name="button">Edit</button>
+    {{#link-to 'edit-run' model._id}}
+      <button class="infoBtn-new" name="button">Edit</button>
     {{/link-to}}
   </div>
 
