@@ -1,14 +1,13 @@
-
 <div class="app__contents">
   <div class="container">
     <div class="run-list">
       {{#each model as |run|}}
-      {{#link-to 'run-info' run._id}}
-      <div class="run-list__item">
-        <p class="date">{{ run.date }}</p>
-        <p class="time">{{ run.time }}</p>
-      </div>
-      {{/link-to}}
+        {{#link-to 'run-info' run._id}}
+          <div class="run-list__item">
+            <p class="date">{{ run.date }}</p>
+            <p class="time">{{ run.time }}</p>
+          </div>
+        {{/link-to}}
       {{/each}}
     </div>
   </div>
@@ -17,7 +16,7 @@
   <div class="container">
     <div class="btn-container">
       {{#link-to 'new-run'}}
-      <button class="btn" type="button" name="button">+</button>
+        <button class="btn" type="button" name="button">+</button>
       {{/link-to}}
     </div>
   </div>
