@@ -2,12 +2,17 @@
   <div class="container">
     <div class="run-list">
       {{#each model as |run|}}
-        {{#link-to 'run-info' run._id}}
-          <div class="run-list__item">
-            <p class="date">{{ run.date }}</p>
-            <p class="time">{{ run.time }}</p>
+        <div class="run-list__item-outer">
+          {{#link-to 'run-info' run._id class="run-list__item"}}
+            <div class="run-list__item__sep">
+              <p class="date">{{ run.date }}</p>
+              <p class="time">{{ run.time }}</p>
+            </div>
+          {{/link-to}}
+          <div class="btn-container__index">
+            <button class="delete-btn" type="button" name="button" {{action 'deleteRun' run}}>Delete</button>
           </div>
-        {{/link-to}}
+        </div>
       {{/each}}
     </div>
   </div>
@@ -21,3 +26,4 @@
     </div>
   </div>
 </div>
+{{outlet}}

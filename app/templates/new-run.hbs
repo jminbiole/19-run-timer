@@ -3,9 +3,9 @@
   <div class="container">
     <form class="new-run" {{action "addRun" on="submit"}}>
     <h1 class="newTitle">New Run</h1>
-    {{input type="text" placeholder="Run Time" value=time}}
-    {{input type="text" placeholder="Race Date" value=date}}
-    {{input type="text" placeholder="Race Notes" value=notes}}
+    {{input class="new-input" type="text" placeholder="Run Time" value=time}}
+    {{input class="new-input" type="text" placeholder="Race Date" value=date}}
+    {{input class="new-input" type="text" placeholder="Race Notes" value=notes}}
 
     <div class="edit-btns">
       {{#link-to 'index'}}
@@ -16,3 +16,4 @@
   </form>
   </div>
 </div>
+{{outlet}}
