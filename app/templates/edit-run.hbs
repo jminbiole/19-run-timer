@@ -1,13 +1,13 @@
 <div class="app__contents newRun">
   <div class="container">
     <form class="new-run" {{action "editRun" model._id on="submit"}}>
-      <h1 class="newTitle">Edit Run</h1>
-      {{input class="edit-input" type="text" placeholder="Run Time" value=model.time}}
-      {{input class="edit-input" type="text" placeholder="Race Date" value=model.date}}
-      {{input class="edit-input" type="text" placeholder="Race Notes" value=model.notes}}
+      <h1 class="newTitle">Edit Log</h1>
+      {{input class="edit-input" type="text" placeholder="WorkoutTime" value=model.time}}
+      {{input class="edit-input" type="text" placeholder="Workout Date" value=model.date}}
+      {{input class="edit-input" type="text" placeholder="Workout Notes" value=model.notes}}
 
       <div class="edit-btns">
-        {{#link-to 'run-info' model._id class="newBtn-cancel"}}Cancel{{/link-to}}
+        {{#link-to 'run-info' model._id class="newBtn-cancel"}}Back{{/link-to}}
         <button class="newBtn-submit" type="submit" name="button">Save</button>
       </div>
     </form>
@@ -15,4 +15,4 @@
 </div>
 
 
-{{outlet}}
+{{liquid-outlet}}
